@@ -13,6 +13,7 @@
 		AFE6134E247095A3009E64C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE6134C247095A3009E64C5 /* Main.storyboard */; };
 		AFE61350247095A4009E64C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE6134F247095A4009E64C5 /* Assets.xcassets */; };
 		AFE61353247095A4009E64C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE61351247095A4009E64C5 /* LaunchScreen.storyboard */; };
+		AFF931952471F749002ED4D5 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AFF931942471F749002ED4D5 /* alarm_sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AFE6134F247095A4009E64C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFE61352247095A4009E64C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFE61354247095A4009E64C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF931942471F749002ED4D5 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		AFE6133A247095A3009E64C5 = {
 			isa = PBXGroup;
 			children = (
+				AFF931932471F727002ED4D5 /* Sound */,
 				AFE61345247095A3009E64C5 /* Egg Timer */,
 				AFE61344247095A3009E64C5 /* Products */,
 			);
@@ -65,6 +68,14 @@
 				AFE61354247095A4009E64C5 /* Info.plist */,
 			);
 			path = "Egg Timer";
+			sourceTree = "<group>";
+		};
+		AFF931932471F727002ED4D5 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				AFF931942471F749002ED4D5 /* alarm_sound.mp3 */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +138,7 @@
 			files = (
 				AFE61353247095A4009E64C5 /* LaunchScreen.storyboard in Resources */,
 				AFE61350247095A4009E64C5 /* Assets.xcassets in Resources */,
+				AFF931952471F749002ED4D5 /* alarm_sound.mp3 in Resources */,
 				AFE6134E247095A3009E64C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XUL34M32PL;
 				INFOPLIST_FILE = "Egg Timer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.demariodouce.Egg-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XUL34M32PL;
 				INFOPLIST_FILE = "Egg Timer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.demariodouce.Egg-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
