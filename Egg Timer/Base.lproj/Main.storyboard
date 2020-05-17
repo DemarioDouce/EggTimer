@@ -25,6 +25,9 @@
                                         <state key="normal" title="HARD">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mEo-rw-jfH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUW-1l-mZo">
                                         <rect key="frame" x="115.5" y="0.0" width="138.5" height="46"/>
@@ -33,6 +36,9 @@
                                         <state key="normal" title="MEDIUM">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sn7-K6-bqJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1q-MR-3ci">
                                         <rect key="frame" x="274" y="0.0" width="100" height="46"/>
@@ -41,6 +47,9 @@
                                         <state key="normal" title="SOFT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0mn-gT-0mb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -48,25 +57,38 @@
                                 <rect key="frame" x="63.5" y="265.5" width="287" height="365"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOIL IT " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdb-jR-oGS">
-                                <rect key="frame" x="136.5" y="128" width="141.5" height="54"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <rect key="frame" x="162.5" y="94" width="89.5" height="121.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7pj-22-h80">
+                                <rect key="frame" x="75" y="755" width="265" height="2"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="progressTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="tuq-bd-fVQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0hY-xb-B6u"/>
-                            <constraint firstItem="I4d-A0-bxW" firstAttribute="top" secondItem="bdb-jR-oGS" secondAttribute="bottom" constant="83.5" id="7kh-Ml-k4V"/>
+                            <constraint firstItem="I4d-A0-bxW" firstAttribute="top" secondItem="bdb-jR-oGS" secondAttribute="bottom" constant="50" id="7kh-Ml-k4V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7pj-22-h80" secondAttribute="trailing" constant="54" id="OFH-te-z7Q"/>
                             <constraint firstItem="I4d-A0-bxW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P29-Jj-Tqn"/>
                             <constraint firstItem="I4d-A0-bxW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="R2w-GL-R33"/>
+                            <constraint firstItem="7pj-22-h80" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="RXu-f4-YGn"/>
+                            <constraint firstItem="tuq-bd-fVQ" firstAttribute="top" secondItem="7pj-22-h80" secondAttribute="bottom" constant="59" id="Tnj-QI-QAn"/>
                             <constraint firstItem="bdb-jR-oGS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xg0-bc-njg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tuq-bd-fVQ" secondAttribute="trailing" constant="20" id="kp2-8b-Nxx"/>
-                            <constraint firstItem="bdb-jR-oGS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="t4Q-sa-0oO"/>
+                            <constraint firstItem="bdb-jR-oGS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="t4Q-sa-0oO"/>
                             <constraint firstItem="tuq-bd-fVQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wZH-rR-Xvl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="7pj-22-h80" id="ivv-yD-PDp"/>
+                        <outlet property="titleLabel" destination="bdb-jR-oGS" id="Hbc-Qx-4gO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

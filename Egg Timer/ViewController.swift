@@ -11,13 +11,14 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var titleLabel: UILabel!
-    let eggTimes = ["Soft": 3, "Medium": 4, "Hard": 7]
+    @IBOutlet weak var progressBar: UIProgressView!
+    let eggTimes = ["SOFT": 3, "MEDIUM": 4, "HARD": 7]
     var timer = Timer()
     var player: AVAudioPlayer!
     var totalTime = 0
     var secondsPassed = 0
+    
     
     @IBAction func hardnessSelected(_ sender: UIButton) {
         
@@ -32,11 +33,11 @@ class ViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1.0, target:self, selector: #selector(updateTimer), userInfo:nil, repeats: true)
     }
     
+    
     @objc func updateTimer() {
         if secondsPassed < totalTime {
             secondsPassed += 1
             progressBar.progress = Float(secondsPassed) / Float(totalTime)
-            print(Float(secondsPassed) / Float(totalTime))
         } else {
             timer.invalidate()
             titleLabel.text = "DONE!"
