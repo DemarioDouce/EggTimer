@@ -1,4 +1,5 @@
 # Egg Timer
-## Learning project
 ---
-* Gives a demo time of when an egg should completely be boiled.
+## Screenshot
+![Homepage mockup image.](/Mockups/MockupsEggTimer.png)
+---
